@@ -1,0 +1,40 @@
+<!-- Archivo: login/frontend/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" type="image/png">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <button id="toggleTheme" class="theme-button" title="Cambiar tema">🎨</button>
+
+  <div class="container">
+    <h2>Login / Registro</h2>
+    <div class="readme-wrapper">
+  <button id="toggleReadme" class="readme-button">❓</button>
+  <div id="readmeBox" class="readme hidden">
+    <button id="switchLang" class="lang-switch">EN</button>
+    <div id="readmeText">
+      <p>Este formulario permite registrarte o iniciar sesión. Ingresa tu correo electrónico y contraseña para continuar. Los datos se validan antes de enviarse al servidor.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="form">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button onclick="register()">Registrarse</button>
+      <button onclick="login()">Iniciar Sesión</button>
+    </div>
+    <div id="notify" class="notify hidden">¡Bienvenido!</div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
